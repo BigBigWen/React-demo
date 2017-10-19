@@ -78,10 +78,10 @@ class DatePicker extends Component {
       year = new Date().getFullYear()
     }
     let data = [
-      {value: [{showDate: year - 4, data: 'argt'}, {showDate: year - 3, data: 'evb'}, {showDate: year - 2, data: 'iqwsde'}]},
-      {value: [{showDate: year - 1, data: 'bdgf'}, {showDate: year, data: 'f42jk'}, {showDate: year + 1, data: 'jdf52'}]},
-      {value: [{showDate: year + 2, data: 'cb'}, {showDate: year + 3, data: 'ger'}, {showDate: year + 4, data: 'knp'}]},
-      {value: [{showDate: year + 5, data: 'dop'}, {showDate: year + 6, data: 'haswf'}, {showDate: year + 7, data: 'lfk'}]}]
+      {value: [{showDate: year - 4, date: 'argt'}, {showDate: year - 3, date: 'evb'}, {showDate: year - 2, date: 'iqwsde'}]},
+      {value: [{showDate: year - 1, date: 'bdgf'}, {showDate: year, date: 'f42jk'}, {showDate: year + 1, date: 'jdf52'}]},
+      {value: [{showDate: year + 2, date: 'cb'}, {showDate: year + 3, date: 'ger'}, {showDate: year + 4, date: 'knp'}]},
+      {value: [{showDate: year + 5, date: 'dop'}, {showDate: year + 6, date: 'haswf'}, {showDate: year + 7, date: 'lfk'}]}]
     data.forEach(item =>
         item.value.forEach(datum => {
           if (datum.showDate === year) {
@@ -113,10 +113,10 @@ class DatePicker extends Component {
       month = new Date().getMonth() + 1
     }
     let data = [
-      {value: [{showDate: '01', data: 'argt'}, {showDate: '02', data: 'evb'}, {showDate: '03', data: 'iqwsde'}]},
-      {value: [{showDate: '04', data: 'bdgf'}, {showDate: '05', data: 'f42jk'}, {showDate: '06', data: 'jdf52'}]},
-      {value: [{showDate: '07', data: 'cb'}, {showDate: '08', data: 'ger'}, {showDate: '09', data: 'knp'}]},
-      {value: [{showDate: '10', data: 'dop'}, {showDate: '11', data: 'haswf'}, {showDate: '12', data: 'lfk'}]}]
+      {value: [{showDate: '01', date: 'argt'}, {showDate: '02', date: 'evb'}, {showDate: '03', date: 'iqwsde'}]},
+      {value: [{showDate: '04', date: 'bdgf'}, {showDate: '05', date: 'f42jk'}, {showDate: '06', date: 'jdf52'}]},
+      {value: [{showDate: '07', date: 'cb'}, {showDate: '08', date: 'ger'}, {showDate: '09', date: 'knp'}]},
+      {value: [{showDate: '10', date: 'dop'}, {showDate: '11', date: 'haswf'}, {showDate: '12', date: 'lfk'}]}]
     data.forEach(item =>
         item.value.forEach(datum => {
           if (datum.showDate === `${(month || []).length === 1 ? '0' + month : month}`) {
@@ -202,9 +202,11 @@ class DatePicker extends Component {
     }
   }
   clickChangeBc (id) {
+    console.log(id)
     this.state.dayData.forEach(item =>
       item.value.forEach(data => {
         if (data.date === id) {
+          console.log(data.date)
           data.bg = 'clickedBg'
         }
       }
