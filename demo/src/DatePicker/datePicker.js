@@ -106,9 +106,7 @@ class DatePicker extends Component {
         item.className = ''
       }
     })
-    console.log(!year)
     if (!year) {
-      console.log('sdkn')
       year = new Date().getFullYear()
       month = new Date().getMonth() + 1
     }
@@ -127,7 +125,6 @@ class DatePicker extends Component {
           }
         })
       )
-    console.log(year)
 
     this.setState({
       theader: [],
@@ -202,11 +199,9 @@ class DatePicker extends Component {
     }
   }
   clickChangeBc (id) {
-    console.log(id)
     this.state.dayData.forEach(item =>
       item.value.forEach(data => {
         if (data.date === id) {
-          console.log(data.date)
           data.bg = 'clickedBg'
         }
       }
