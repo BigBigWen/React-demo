@@ -1,32 +1,5 @@
-.datePicker{
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 5px;
-  height: 24px;
-  line-height: 24px;
-  width: 230px;
-}
-.btnGroup{
-  width: 240px;
-  display: flex;
-  justify-content: space-between;
-  margin:10px 0px
-}
-.btn-active{
-  background: #1abc9c
-}
-.btnGroup>button{
-  height: 40px;
-  width: 60px;
-  box-shadow: 2px 2px 8px 2px rgba(128, 128, 128, 0.3);
-  border:none
-}
-.datePicker:focus,.btnGroup>button:focus{
-  outline: 0 none;
-  border: 1px solid #1abc9c
-}
 .wrapper {
-  width: 240px;
+  width: 350px;
   font-size: 16px;
   box-shadow: 2px 2px 8px 2px rgba(128, 128, 128, 0.3); }
 
@@ -53,15 +26,10 @@
   width: 100% !important;
   border-collapse: none; }
 
-.wrapper .table thead tr th, .wrapper .table tbody tr .dayTd {
+.wrapper .table thead tr th, .wrapper .table tbody tr td {
   height: 20px;
   text-align: center;
   width: 10px; }
-  .wrapper .table tbody tr .monthYearTd {
-    height: 30px;
-    text-align: center;
-    width: 23px; 
-  }
 
 .wrapper .table thead tr th {
   height: 30px;
@@ -72,11 +40,3 @@
   cursor: pointer;
   font-size: 10px;
   border: 1px bsolid #f0f0f0; }
-  .emptyDate{
-    width: 240px;
-    background: #1abc9c;
-    height: 30px;
-  }
-  .clickedBg{
-    background-color: #1abc9c
-  }
