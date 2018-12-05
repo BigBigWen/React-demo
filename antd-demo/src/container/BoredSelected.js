@@ -73,7 +73,7 @@ class BoredSelected extends Component {
           </MenuItemGroup>
         </SubMenu>
         <Menu.Item key='alipay'>
-          <a href='https://ant.design' target='_blank' rel='noopener noreferrer'>Navigation Four - Link</a>
+          <a href='https://ant.design' target='_blank' rel='noopener noreferrer'>跳到antd看看</a>
         </Menu.Item>
       </Menu>
       // <Layout>

@@ -1,13 +1,23 @@
 import React, { Component } from 'react'
 import './App.css'
-import BoredSelected from './container/BoredSelected'
+// import BoredSelected from './container/BoredSelected'
+import TreeG2 from './container/TreeG2'
+// import NodeTree from './container/NodeTree'
+import TreeG6 from './container/TreeG6'
+import TextTree from './container/TextTree'
 
 class App extends Component {
   render () {
     return (
       <div className='App'>
-        <BoredSelected />
+        {/* <BoredSelected /> */}
         antd项目
+        <TreeG2 />
+        <div>---------------------------------------华丽分割线-------------------------------------</div>
+        {/* <NodeTree /> */}
+        <TreeG6 />
+        <div>---------------------------------------华丽分割线-------------------------------------</div>
+        <TextTree />
       </div>
     )
   }
