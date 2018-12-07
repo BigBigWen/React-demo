@@ -5,6 +5,7 @@
   "dependencies": {
     "@antv/data-set": "^0.10.1",
     "@antv/g2": "^3.4.5",
+    "@antv/g6": "^2.2.2",
     "antd": "^2.13.6",
     "hermes-react": "^1.8.1",
     "node-sass-chokidar": "0.0.3",
