@@ -5,6 +5,7 @@ import createBrowserHistory from 'history/createBrowserHistory'
 import Page1 from './container/Page1'
 import Page2 from './container/Page2'
 import Page3 from './container/Page3'
+// import HooksTest from './container/Hooks'
 
 const history = createBrowserHistory()
 const Links = () => (
@@ -14,6 +15,7 @@ const Links = () => (
     <Link to='/page1'>Page1</Link>
     <Link to='/page2'>Page2</Link>
     <Link to='/page3'>Page3</Link>
+    {/* <Link to='/hooks'>HooksTest</Link> */}
   </nav>
 )
 
@@ -29,6 +31,7 @@ class RouterCom extends React.Component {
           <Route exact path='/page1' component={Page1} />
           <Route exact path='/page2' component={Page2} />
           <Route exact path='/page3' component={Page3} />
+          {/* <Route exact path='/hooks' component={() => HooksTest()} /> */}
         </div>
       </Router>
     )
